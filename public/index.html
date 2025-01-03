@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo App</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
+        <h1>Todo App</h1>
+
+        <h2>MongoDB Todos</h2>
+        <input type="text" id="mongoTodoInput" placeholder="New todo..." />
+        <button onclick="addMongoTodo()">Add</button>
+        <ul id="mongoTodos"></ul>
+
+        <h2>MySQL Todos</h2>
+        <input type="text" id="sqlTodoInput" placeholder="New todo..." />
+        <button onclick="addSQLTodo()">Add</button>
+        <ul id="sqlTodos"></ul>
+
+        <script src="./js/mongoTodos.js"></script>
+        <script src="./js/sqlTodos.js"></script>
+        <script>
+            loadMongoTodos();
+            loadSQLTodos();
+        </script>
+    </body>
+</html>
